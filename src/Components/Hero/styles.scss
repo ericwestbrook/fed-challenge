@@ -1,0 +1,78 @@
+@import "../../Styles/colors";
+@import "../../Styles/fonts";
+
+.Hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  min-height: 400px;
+
+  &__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 1;
+    transition: opacity 0.2s 0s ease-in;
+  }
+
+  &__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+
+    span {
+      position: relative;
+      color: $white;
+      font-weight: $semiBold;
+      font-size: 48px;
+      white-space: pre-line;
+      opacity: 1;
+      top: 0;
+
+      transition: top 0.5s 1s ease-in, opacity 0.5s 1s ease-in;
+    }
+
+    button {
+      position: relative;
+      color: $white;
+      background-color: $blue;
+      border-radius: 4px;
+      border: none;
+      padding: 15px 0;
+      font-weight: bold;
+      font-size: 12px;
+      text-transform: uppercase;
+      width: 100%;
+      max-width: 400px;
+      margin-top: 60px;
+      opacity: 1;
+      transition: opacity 0.5s 1.75s ease-in;
+
+      &:hover {
+        top: -2px;
+        box-shadow: 0px 10px 10px $shadow;
+      }
+    }
+  }
+
+  &.loading {
+    .Hero__image {
+      opacity: 0;
+    }
+    .Hero__content {
+      span {
+        opacity: 0;
+        top: 20px;
+      }
+      button {
+        opacity: 0;
+      }
+    }
+  }
+}

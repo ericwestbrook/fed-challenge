@@ -1,0 +1,83 @@
+@import "../../Styles/colors";
+@import "../../Styles/fonts";
+
+.Nav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: $white;
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__link {
+    a {
+      display: block;
+      font-weight: $semiBold;
+      text-decoration: none;
+      font-size: 12px;
+      color: $dark-grey;
+      text-transform: uppercase;
+      opacity: 0.8;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__button {
+    color: $white;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: $blue;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    position: relative;
+    top: 0;
+    transition: top 0.1s 0s ease-in;
+
+    &:hover {
+      top: -2px;
+      box-shadow: 0px 10px 10px $shadow;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid $light-grey;
+
+    &__link {
+      border-right: 1px solid $light-grey;
+      a {
+        padding: 16px 40px;
+      }
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    .Nav__link {
+      a {
+        display: block;
+        padding: 30px 20px;
+      }
+    }
+  }
+
+  &__logo {
+    margin-top: 26px;
+  }
+}
