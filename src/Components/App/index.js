@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 import Nav from "../Nav"
 import Hero from "../Hero"
@@ -157,14 +157,17 @@ const footerLinks = [
 ]
 
 function App() {
+  let [heroInView, setHeroInView] = useState(true)
+
   return (
     <div className='App'>
-      <Nav />
+      <Nav heroInView={heroInView} />
       <div className='App__content'>
         <Hero
           title={"The best personal training,\n right in your own home"}
           cta='join iFit Coach'
           image={fedHero}
+          setHeroInView={setHeroInView}
         />
         <Reviews reviews={reviews} />
         <WorkoutCollections collections={workoutCollections} />

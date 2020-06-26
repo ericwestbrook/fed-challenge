@@ -4,9 +4,9 @@ import logo from "../../Images/ifit-coach-logo.svg"
 
 import "./styles.scss"
 
-function Nav() {
+function Nav(props) {
   return (
-    <div className='Nav'>
+    <div className={`Nav ${props.heroInView ? "" : "scrolled"}`}>
       <div className='Nav__inner'>
         <div className='Nav__header'>
           <div className='Nav__link Nav__header__link'>

@@ -9,6 +9,11 @@
   top: 0;
   background-color: $white;
   z-index: 2;
+  transition: top 0.3s ease-in;
+
+  &.scrolled {
+    top: -130px;
+  }
 
   &__links {
     display: flex;
@@ -80,5 +85,20 @@
 
   &__logo {
     margin-top: 26px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Nav {
+    padding-bottom: 10px;
+    &__header {
+      &__link {
+        flex: 1;
+      }
+    }
+
+    &__links {
+      display: none;
+    }
   }
 }
