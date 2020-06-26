@@ -1,13 +1,84 @@
+@import "../../Styles/colors";
+@import "../../Styles/fonts";
+
 .WorkoutCollection {
   flex: 1 0 21%; /* explanation below */
   margin: 5px;
   position: relative;
   border-radius: 4px;
   overflow: hidden;
+  box-shadow: 0 1px 2px $shadow;
+  transition: box-shadow 0.2s ease-in;
+
+  &:hover {
+    box-shadow: 0 7px 12px $shadow;
+
+    .WorkoutCollection__hover-link {
+      opacity: 1;
+    }
+  }
+
+  &__hover-link {
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+    color: $blue;
+    font-size: 14px;
+    font-weight: $bold;
+    text-transform: uppercase;
+  }
 
   &__banner {
-    position: relative;
-    width: 100%;
-    display: block;
+    img {
+      position: relative;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__content {
+    padding: 16px;
+
+    &__title-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      min-height: 38px;
+
+      span {
+        margin-right: 8px;
+        font-size: 14px;
+        font-weight: $bold;
+      }
+      img {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    &__metrics-bar {
+      display: flex;
+      flex-direction: row;
+      margin: 10px auto;
+      height: 14px;
+    }
+  }
+
+  &__metric {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &:last-child {
+      margin-left: 8px;
+    }
+
+    img {
+      display: block;
+    }
+    span {
+      font-size: 10px;
+      font-weight: $bold;
+      margin-left: 4px;
+    }
   }
 }

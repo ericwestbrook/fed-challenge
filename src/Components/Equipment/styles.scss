@@ -1,0 +1,42 @@
+@import "../../Styles/colors";
+
+.Equipment {
+  padding: 0 40px 40px 40px;
+  text-align: center;
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    position: relative;
+    flex: 1 0 21%;
+    margin: 5px;
+    box-shadow: 0 1px 2px $shadow;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      position: relative;
+      width: 60%;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}

@@ -4,6 +4,7 @@ import Nav from "../Nav"
 import Hero from "../Hero"
 import Reviews from "../Reviews"
 import WorkoutCollections from "../WorkoutCollections"
+import Equipment from "../Equipment"
 
 import fedHero from "../../Images/fed-hero.jpg"
 import gearJunkieLogo from "../../Images/gear-junkie-logo.svg"
@@ -25,6 +26,10 @@ import wcIcon5 from "../../Images/wcIcon5.png"
 import wcIcon6 from "../../Images/wcIcon6.png"
 import wcIcon7 from "../../Images/wcIcon7.png"
 import wcIcon8 from "../../Images/wcIcon8.png"
+import treadmillsImg from "../../Images/treadmills.jpg"
+import bikesImg from "../../Images/bikes.jpg"
+import ellipticalsImg from "../../Images/ellipticals.jpg"
+import strengthImg from "../../Images/strength.jpg"
 
 import "./styles.scss"
 
@@ -116,6 +121,25 @@ const workoutCollections = [
   },
 ]
 
+const equipment = [
+  {
+    title: "Treadmills",
+    image: treadmillsImg,
+  },
+  {
+    title: "Bikes",
+    image: bikesImg,
+  },
+  {
+    title: "Ellipticals",
+    image: ellipticalsImg,
+  },
+  {
+    title: "Strength",
+    image: strengthImg,
+  },
+]
+
 function App() {
   return (
     <div className='App'>
@@ -128,6 +152,7 @@ function App() {
         />
         <Reviews reviews={reviews} />
         <WorkoutCollections collections={workoutCollections} />
+        <Equipment equipment={equipment} />
       </div>
     </div>
   )

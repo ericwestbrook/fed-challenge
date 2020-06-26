@@ -1,6 +1,9 @@
+@import "../../Styles/colors";
+
 .App {
   font-family: "Open Sans";
   padding-top: 130px;
+  color: $dark-grey;
 
   &__content {
     position: relative;
