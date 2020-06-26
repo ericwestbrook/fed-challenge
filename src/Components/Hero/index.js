@@ -12,7 +12,6 @@ function Hero(props) {
   }, [])
   return (
     <div className={`Hero ${loaded ? "loaded" : "loading"}`}>
-      {/* <img className='Hero__image' src={props.image} alt={props.title} /> */}
       <div
         className='Hero__image'
         style={{ backgroundImage: `url(${props.image})` }}

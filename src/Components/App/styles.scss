@@ -1,4 +1,8 @@
 .App {
   font-family: "Open Sans";
   padding-top: 130px;
+
+  &__content {
+    position: relative;
+  }
 }

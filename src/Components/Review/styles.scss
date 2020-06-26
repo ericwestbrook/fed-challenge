@@ -1,0 +1,37 @@
+@import "../../Styles/colors";
+@import "../../Styles/fonts";
+
+.Review {
+  background-color: $white;
+  margin: auto 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  height: 150px;
+  width: calc(33.33333vw - 60px);
+  flex-shrink: 0;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__logo {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    color: $dark-grey;
+    font-size: 14px;
+  }
+}

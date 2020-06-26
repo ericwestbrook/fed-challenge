@@ -1,0 +1,71 @@
+@import "../../Styles/colors";
+@import "../../Styles/fonts";
+
+.Reviews {
+  position: relative;
+  padding: 30px 40px;
+  height: 170px;
+  background-color: $blue-white;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: -40px;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+
+    &__inner {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__controls {
+    position: absolute;
+    top: 0;
+    width: calc(100% - 40px);
+    height: 100%;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__control {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: $deep-blue;
+    border-radius: 20px;
+    &__arrow {
+      position: absolute;
+      transform: rotate(45deg);
+      width: 10px;
+      height: 10px;
+      border: 1px solid $white;
+      top: 15px;
+      left: 17px;
+      &:after {
+        content: "";
+        display: block;
+        width: 12px;
+        height: 18px;
+        transform: rotate(-45deg);
+        position: absolute;
+        background-color: $deep-blue;
+        left: 3px;
+        top: -8px;
+      }
+    }
+
+    &--forward .Reviews__control__arrow {
+      transform: rotate(225deg);
+      left: 12px;
+    }
+  }
+}
