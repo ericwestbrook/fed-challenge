@@ -1,0 +1,13 @@
+.WorkoutCollection {
+  flex: 1 0 21%; /* explanation below */
+  margin: 5px;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+
+  &__banner {
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+}
