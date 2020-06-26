@@ -3,7 +3,7 @@
 
 .Footer {
   background-color: $dark-grey;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
 
   &__main-links {
     display: flex;
@@ -22,6 +22,57 @@
 
       &:first-child {
         font-weight: $bold;
+      }
+    }
+  }
+
+  &__social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 76px;
+    border-top: 2px solid $mid-grey;
+    border-bottom: 2px solid $mid-grey;
+
+    a {
+      margin: auto 16px;
+    }
+  }
+
+  &__copyright {
+    position: relative;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    select {
+      background: none;
+      border: none;
+      color: $white;
+    }
+
+    &__lang {
+      position: absolute;
+      left: 40px;
+      top: 14px;
+    }
+
+    &__links {
+      color: $white;
+      font-size: 12px;
+
+      a {
+        text-decoration: none;
+        color: $white;
+        font-weight: $bold;
+      }
+
+      span,
+      a {
+        margin: 0 10px;
       }
     }
   }

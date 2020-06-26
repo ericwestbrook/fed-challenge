@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0069D2" offset="0%"></stop>
+            <stop stop-color="#28E1A5" offset="100%"></stop>
+        </linearGradient>
+        <path d="M17,3 L17,6.6 L15.2,6.6 C14.6,6.6 14.3,7.3 14.3,7.9 L14.3,10.1 L17,10.1 L17,13.7 L14.3,13.7 L14.3,21 L10.7,21 L10.7,13.8 L8,13.8 L8,10.2 L10.7,10.2 L10.7,6.6 C10.7,4.6 12.3,3 14.3,3 L17,3" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-700.000000, -2494.000000)">
+            <g id="Footer" transform="translate(0.000000, 2268.000000)">
+                <g id="social" transform="translate(0.000000, 208.000000)">
+                    <g id="icons" transform="translate(556.000000, 18.000000)">
+                        <g id="facebook" transform="translate(144.000000, 0.000000)">
+                            <path d="M20,2 C10.0743918,2 2,10.0743918 2,20 C2,29.9256082 10.0743918,38 20,38 C29.9256082,38 38,29.9256082 38,20 C38,10.0743918 29.9256082,2 20,2 M20,40 C8.97165049,40 0,31.0283495 0,20 C0,8.97165049 8.97165049,0 20,0 C31.0283495,0 40,8.97165049 40,20 C40,31.0283495 31.0283495,40 20,40" id="Fill-16" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                            <g id="Social-/-Social-Media-/-facebook" transform="translate(8.000000, 8.000000)">
+                                <mask id="mask-3" fill="white">
+                                    <use xlink:href="#path-2"></use>
+                                </mask>
+                                <use id="mask" fill="#2E3134" fill-rule="nonzero" xlink:href="#path-2"></use>
+                                <g id="Fill-/-White" mask="url(#mask-3)" fill="#FFFFFF" fill-rule="nonzero">
+                                    <polygon id="ui/color/white" points="0 0 24 0 24 24 0 24"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
