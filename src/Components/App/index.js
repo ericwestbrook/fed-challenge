@@ -5,6 +5,7 @@ import Hero from "../Hero"
 import Reviews from "../Reviews"
 import WorkoutCollections from "../WorkoutCollections"
 import Equipment from "../Equipment"
+import Footer from "../Footer"
 
 import fedHero from "../../Images/fed-hero.jpg"
 import gearJunkieLogo from "../../Images/gear-junkie-logo.svg"
@@ -140,6 +141,21 @@ const equipment = [
   },
 ]
 
+const footerLinks = [
+  {
+    title: "Company",
+    sublinks: ["About", "Contact Us", "Careers"],
+  },
+  {
+    title: "Account",
+    sublinks: ["Log In", "Create Account"],
+  },
+  {
+    title: "Support",
+    sublinks: ["Help Center", "Accessibility"],
+  },
+]
+
 function App() {
   return (
     <div className='App'>
@@ -153,6 +169,7 @@ function App() {
         <Reviews reviews={reviews} />
         <WorkoutCollections collections={workoutCollections} />
         <Equipment equipment={equipment} />
+        <Footer links={footerLinks} />
       </div>
     </div>
   )

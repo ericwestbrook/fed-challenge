@@ -1,0 +1,28 @@
+@import "../../Styles/colors";
+@import "../../Styles/fonts";
+
+.Footer {
+  background-color: $dark-grey;
+  padding: 40px 0;
+
+  &__main-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    ul {
+      list-style-type: none;
+      width: 33%;
+      max-width: 240px;
+      font-size: 12px;
+      line-height: 30px;
+    }
+    a {
+      text-decoration: none;
+      color: $white;
+
+      &:first-child {
+        font-weight: $bold;
+      }
+    }
+  }
+}
