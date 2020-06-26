@@ -7,17 +7,18 @@ import "./styles.scss"
 function Reviews(props) {
   let [loaded, setLoaded] = useState(false)
   let [animating, setAnimating] = useState(false)
+  let [animateClass, setAnimateClass] = useState("")
   let [firstItem, setFirstItem] = useState(0)
   let [displayList, setDisplayList] = useState(props.reviews)
 
-  const animationDelay = 1000
+  const animationDelay = 200
 
   const onBackwardClick = () => {
     if (!animating) {
       setAnimating(true)
+      setAnimateClass("backward")
       const nextFirstItem =
         firstItem === 0 ? props.reviews.length - 1 : firstItem - 1
-      console.log(nextFirstItem)
       setTimeout(() => {
         setAnimating(false)
         setFirstItem(nextFirstItem)
@@ -29,9 +30,9 @@ function Reviews(props) {
   const onForwardClick = () => {
     if (!animating) {
       setAnimating(true)
+      setAnimateClass("forward")
       const nextFirstItem =
         firstItem === props.reviews.length - 1 ? 0 : firstItem + 1
-      console.log(nextFirstItem)
       setTimeout(() => {
         setAnimating(false)
         setFirstItem(nextFirstItem)
@@ -61,8 +62,6 @@ function Reviews(props) {
     indexes.forEach((index, i) => {
       newDisplayList[i] = props.reviews[index]
     })
-    console.log("firstItem: ", firstItem)
-    console.log("newDisplayList: ", newDisplayList)
     setDisplayList(newDisplayList)
   }
 
@@ -74,7 +73,11 @@ function Reviews(props) {
   }, [])
 
   return (
-    <div className={`Reviews ${loaded ? "loaded" : "loading"}`}>
+    <div
+      className={`Reviews ${loaded ? "loaded" : "loading"} ${
+        animating ? `animating-${animateClass}` : ""
+      }`}
+    >
       <div className='Reviews__content'>
         <div className='Reviews__content__inner'>
           {displayList.map((review, i) => (

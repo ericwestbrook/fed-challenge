@@ -7,6 +7,13 @@
   height: 170px;
   background-color: $blue-white;
 
+  // &.animating {
+  //   transition: left 0.5s ease-in;
+  //   &--backward .Reviews__content {
+  //     left: calc(33.33333vw - 60px);
+  //   }
+  // }
+
   &__content {
     display: flex;
     flex-direction: row;

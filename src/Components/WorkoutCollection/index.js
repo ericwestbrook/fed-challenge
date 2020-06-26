@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 
 import iconTimer from "../../Images/icon-timer.svg"
 import iconDistance from "../../Images/icon-distance.svg"
+import iconPlaylist from "../../Images/icon-playlist.svg"
 
 import "./styles.scss"
 
@@ -17,6 +18,17 @@ function WorkoutCollection(props) {
     <div className={`WorkoutCollection ${loaded ? "loaded" : "loading"}`}>
       <div className='WorkoutCollection__banner'>
         <img src={props.collection.banner} alt={props.collection.title} />
+        {props.collection.length && (
+          <div className='WorkoutCollection__banner__info'>
+            <span className='WorkoutCollection__banner__info__num'>
+              {props.collection.length}
+            </span>
+            <span className='WorkoutCollection__banner__info__label'>
+              workouts
+            </span>
+            <img src={iconPlaylist} alt='Playlist' />
+          </div>
+        )}
       </div>
       <div className='WorkoutCollection__content'>
         <div className='WorkoutCollection__content__title-bar'>
